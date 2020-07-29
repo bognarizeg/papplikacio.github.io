@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Kapcsolat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+   <ion-list-header>Hagyjon üzenetet</ion-list-header>
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-input [(ngModule)]="message.email" type="email" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Üzenetet:</ion-label>
+      <ion-input [(ngModule)]="message.message" type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="sendMessage()" expand="block" color="primary" size="large">Küldés</ion-button>
+    </ion-item>
+  
+</ion-list>
+</ion-content>
